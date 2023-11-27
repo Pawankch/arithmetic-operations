@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "068cd3c3-2203-47e7-9166-f115b35dc0d4",
+		"name": "Lambda-ArithmeticApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14946546",
+		"_collection_link": "https://www.postman.com/pawansays/workspace/lambda-app/collection/14946546-068cd3c3-2203-47e7-9166-f115b35dc0d4?action=share&source=collection_link&creator=14946546"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/add",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/add",
+							"protocol": "https",
+							"host": [
+								"o28zayweh5",
+								"execute-api",
+								"ap-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Nov 2023 08:50:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "f2254a43-fcac-48a0-8d40-769fde9e2bdb"
+						},
+						{
+							"key": "x-amzn-Remapped-content-length",
+							"value": "27"
+						},
+						{
+							"key": "x-amzn-Remapped-connection",
+							"value": "close"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "PDK5QGruhcwEegQ="
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1b-kuiC9kX4yJJvUPWnSjTtNMdxwSQ\""
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-6564583a-27b837190a5ebdb12ce8d537;Sampled=0;lineage=75b7f0dd:0"
+						},
+						{
+							"key": "x-amzn-Remapped-date",
+							"value": "Mon, 27 Nov 2023 08:50:03 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"result\": 7\n}"
+				}
+			]
+		},
+		{
+			"name": "subtract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/subtract",
+					"protocol": "https",
+					"host": [
+						"o28zayweh5",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"subtract"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "subtract",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/subtract",
+							"protocol": "https",
+							"host": [
+								"o28zayweh5",
+								"execute-api",
+								"ap-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"subtract"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Nov 2023 08:50:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5a4e5bf0-6090-4a2d-908d-0ca275e45eb4"
+						},
+						{
+							"key": "x-amzn-Remapped-content-length",
+							"value": "28"
+						},
+						{
+							"key": "x-amzn-Remapped-connection",
+							"value": "close"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "PDK86GaYBcwEXPw="
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1c-/nWRXnDK1tExBeomwk+L6+zl2Q8\""
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65645852-5f0b8e957333c89a6691d205;Sampled=0;lineage=75b7f0dd:0"
+						},
+						{
+							"key": "x-amzn-Remapped-date",
+							"value": "Mon, 27 Nov 2023 08:50:26 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"result\": -3\n}"
+				}
+			]
+		},
+		{
+			"name": "multiply",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/multiply",
+					"protocol": "https",
+					"host": [
+						"o28zayweh5",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"multiply"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "multiply",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/multiply",
+							"protocol": "https",
+							"host": [
+								"o28zayweh5",
+								"execute-api",
+								"ap-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"multiply"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Nov 2023 08:50:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "b1959433-25c9-4f95-8a8a-6cae1ff3bc2b"
+						},
+						{
+							"key": "x-amzn-Remapped-content-length",
+							"value": "28"
+						},
+						{
+							"key": "x-amzn-Remapped-connection",
+							"value": "close"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "PDK_oHgEBcwEZfQ="
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1c-vAKjzUuOazew3kUk7O9XT8XpW0o\""
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-65645863-1685ac974e950dd803f164b0;Sampled=0;lineage=75b7f0dd:0"
+						},
+						{
+							"key": "x-amzn-Remapped-date",
+							"value": "Mon, 27 Nov 2023 08:50:43 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"result\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "divide",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/divide",
+					"protocol": "https",
+					"host": [
+						"o28zayweh5",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"divide"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "divide",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"num1\":2,\r\n    \"num2\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/divide",
+							"protocol": "https",
+							"host": [
+								"o28zayweh5",
+								"execute-api",
+								"ap-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"divide"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Nov 2023 08:51:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "91179e0f-2340-4dba-8e1a-000e0c1c6282"
+						},
+						{
+							"key": "x-amzn-Remapped-content-length",
+							"value": "29"
+						},
+						{
+							"key": "x-amzn-Remapped-connection",
+							"value": "close"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "PDLDiEARhcwEMeA="
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1d-Ji27FMfE6MFFl9Gt4NCXEabOUP4\""
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-6564587c-112be89a4dbdf20c2fd2a4db;Sampled=0;lineage=75b7f0dd:0"
+						},
+						{
+							"key": "x-amzn-Remapped-date",
+							"value": "Mon, 27 Nov 2023 08:51:08 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"result\": 0.4\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://o28zayweh5.execute-api.ap-south-1.amazonaws.com/dev/"
+		}
+	]
+}
